@@ -1,4 +1,4 @@
-﻿# jcomp-biodb
+﻿# miRNA Database
 AarushiBahri
 ArshdeepBhatia
 RohiniDas
