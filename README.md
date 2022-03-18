@@ -1,4 +1,4 @@
 ﻿# miRNA Database 
- > AarushiBahri
- > ArshdeepBhatia
- > RohiniDas
+ - AarushiBahri
+ - ArshdeepBhatia
+ - RohiniDas
