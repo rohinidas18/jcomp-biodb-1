@@ -163,7 +163,7 @@ $servername = "localhost";
 $username = "root";
 $password = "";
 $db = "mutations";
-$link_address = "http://localhost/mutations/cancer.php";
+$link_address = "http://localhost/mirna-database/mutations/cancer.php";
 
 $conn = new mysqli($servername, $username, $password, $db);
 
