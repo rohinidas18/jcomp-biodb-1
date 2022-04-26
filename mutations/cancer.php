@@ -7,11 +7,11 @@
 <div class="header">
 
 	<nav>
-	<a href="home.html"> <image src="home_button.png" width="25" height="25"> </a>
+	<a href="home.html" class ="btn" style="color:black"> Click to go Home </a>
 	</nav>
 
-<h1> Mutations in miRNA </h1>
-<p> MicroRNA (miRNA) expression profiles in various human cancers along with their respective pubmed article </p>
+<h1 style="color: black"> Mutations in miRNA </h1>
+<p style="color: black"> MicroRNA (miRNA) expression profiles in various human cancers along with their respective pubmed article </p>
 </div>
 
 <br>
@@ -152,7 +152,7 @@
 <option value="uveal melanoma"> uveal melanoma </option>
 <option value="waldenstrom's macroglobulinemia"> waldenstrom's macroglobulinemia </option>
   </select>
-<input type ="submit" name="submit1" value="...">
+<input type ="submit" name="submit1" value="Search">
 
 </form>
 <br>
@@ -224,7 +224,7 @@ else {
 
 .hero-btn:hover{
 	border: 1px solid #f44336;
-	background : #e667bd;
+	background :#dce775;
 	transition: 1s;
 }
 
@@ -248,20 +248,20 @@ background-color: #f2f2f2;
 }
 
 th {
-background-color: #e667bd;
-color : white;
+background-color:#dce775;
+color : black;
 text-align: center;
 border: 1px solid #ddd;
 padding: 8px;
 }
 
 tr:nth-child(even):hover {
-background-color: #787878;
+background-color: #9e9d24;
 color: white;
 }
 
 tr:nth-child(odd):hover {
-background-color: #787878;
+background-color: #9e9d24;
 color: white;
 }
 
@@ -269,7 +269,7 @@ color: white;
 .header {
   padding: 8px;
   text-align: center;
-  background: #e667bd;
+  background:#dce775;
   color: white;
   font-size: 25px;
 }

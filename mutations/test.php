@@ -7,10 +7,10 @@
 <body>
 <div class="header">
 	<nav>
-	<a href="home.html"> <image src="home_button.png" width="25" height="25"> </a>
+	<a href="home.html" class ="btn" style="color:black"> Click to go Home </a>
 	</nav>
-<h1> Mutations in miRNA </h1>
-<p> Mutations in experimentally identified miRNA target sites: CLASH </p>
+<h1 style="color:black"> Mutations in miRNA </h1>
+<p style="color:black"> Mutations in experimentally identified miRNA target sites: CLASH </p>
 
 </div>
 
@@ -104,20 +104,20 @@ background-color: #f2f2f2;
 }
 
 th {
-background-color: #e85848;
-color : white;
+background-color: #ef9a9a;
+color : black;
 text-align: center;
 border: 1px solid #ddd;
 padding: 8px;
 }
 
 tr:nth-child(even):hover {
-background-color: #787878;
+background-color: #e57373;
 color: white;
 }
 
 tr:nth-child(odd):hover {
-background-color: #787878;
+background-color: #e57373;
 color: white;
 }
 
@@ -125,7 +125,7 @@ color: white;
 .header {
   padding: 8px;
   text-align: center;
-  background: #e85848;
+  background: #ef9a9a;
   color: white;
   font-size: 25px;
 }
@@ -143,7 +143,7 @@ color: white;
 
 .pagination:hover{
 	border: 1px solid #f44336;
-	background : #e85848;
+	background : #ef9a9a;
 	transition: 1s;
 }
 

@@ -22,7 +22,7 @@ if (isset($_POST['submit'])){
 <body>
 <div class="header">
 	<nav>
-	<a href="home.html"> <image src="home_button.png" width="25" height="25"> </a>
+	<a href="home.html" class ="btn" style="color:white"> Click to go Home </a>
 	</nav>
 <h1> Mutations in miRNA </h1>
 <p> Deletion type mutations occuring in miRNA specifically </p>
@@ -87,11 +87,11 @@ td {
 }
 
 tr:nth-child(even) {
-background-color: #f2f2f2;
+background-color: #b2dfdb;
 }
 
 th {
-background-color: #1abc9c;
+background-color: #009688 ;
 color : white;
 text-align: center;
 border: 1px solid #ddd;
@@ -99,12 +99,12 @@ padding: 8px;
 }
 
 tr:nth-child(even):hover {
-background-color: #787878;
+background-color: #00bfa5;
 color: white;
 }
 
 tr:nth-child(odd):hover {
-background-color: #787878;
+background-color: #00bfa5;
 color: white;
 }
 
@@ -112,7 +112,7 @@ color: white;
 .header {
   padding: 8px;
   text-align: center;
-  background: #1abc9c;
+  background: #00695c;
   color: white;
   font-size: 25px;
 }
