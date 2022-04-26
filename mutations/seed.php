@@ -1,3 +1,18 @@
+<?php
+$user = 'root';
+$pass = '';
+$db = 'mutations';
+
+$db = new mysqli('localhost', $user, $pass, $db) or die ("unable to connect");
+
+$sql = "SELECT * from region where region='Seed'";
+if (isset($_POST['submit'])){
+	$name=$_POST['miRNA'];
+	$sql="SELECT * from region where region='Pre-miRNA' and miRNA_name='".$name."'";
+	$result = $db -> query($sql);
+}
+$result = $db -> query($sql);
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,7 +33,17 @@
 
 <br>
 <br>
-
+<br>
+<br>
+<center>
+		<form action="" method="post">
+		<label for="">Enter miRNA name:</label>
+		<input type="text" name="miRNA" >
+		<input type="submit" value="Search" name="submit">
+	</form>
+	<br>
+	<br>
+</center>
 
 <table>
 <tr>
@@ -30,14 +55,6 @@
 </tr>
 
 <?php
-$user = 'root';
-$pass = '';
-$db = 'mutations';
-
-$db = new mysqli('localhost', $user, $pass, $db) or die ("unable to connect");
-
-$sql = "SELECT * from region where region='Seed'";
-$result = $db -> query($sql);
 
 if ($result -> num_rows >0 ) {
 	while ($row = $result -> fetch_assoc()) {
