@@ -23,10 +23,10 @@
 <th> Reference Sequence </th>
 <th> Gene Symbol </th>
 <th> MicroRNA name </th>
-<th> Mutaion ID </th>
-<th> Mutaion Chromosome </th>
-<th> Mutaion Location </th>
-<th> Mutaion Observed </th>
+<th> Mutation ID </th>
+<th> Mutation Chromosome </th>
+<th> Mutation Location </th>
+<th> Mutation Observed </th>
 </tr>
 
 <?php

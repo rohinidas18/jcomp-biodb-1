@@ -1,3 +1,13 @@
+<?php
+$user = 'root';
+$pass = '';
+$db = 'mutations';
+
+$db = new mysqli('localhost', $user, $pass, $db) or die ("unable to connect");
+
+$sql = "SELECT * from clash_1 LIMIT 5000";
+$result = $db -> query($sql);
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,6 +23,17 @@
 
 <br>
 <br>
+<br>
+<br>
+<center>
+		<form action="" method="post">
+		<label for="">Enter miRNA name:</label>
+		<input type="text" name="miRNA" >
+		<input type="submit" value="Search" name="submit">
+	</form>
+	<br>
+	<br>
+</center>
 
 
 <table>
@@ -20,21 +41,13 @@
 <th> Reference Sequence </th>
 <th> Gene Symbol </th>
 <th> MicroRNA name </th>
-<th> Mutaion ID </th>
-<th> Mutaion Chromosome </th>
-<th> Mutaion Location </th>
-<th> Mutaion Observed </th>
+<th> Mutation ID </th>
+<th> Mutation Chromosome </th>
+<th> Mutation Location </th>
+<th> Mutation Observed </th>
 </tr>
 
 <?php
-$user = 'root';
-$pass = '';
-$db = 'mutations';
-
-$db = new mysqli('localhost', $user, $pass, $db) or die ("unable to connect");
-
-$sql = "SELECT * from clash_1 LIMIT 5000";
-$result = $db -> query($sql);
 
 if ($result -> num_rows >0 ) {
 	while ($row = $result -> fetch_assoc()) {

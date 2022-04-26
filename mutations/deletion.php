@@ -1,3 +1,18 @@
+<?php
+$user = 'root';
+$pass = '';
+$db = 'mutations';
+
+$db = new mysqli('localhost', $user, $pass, $db) or die ("unable to connect");
+
+$sql = "SELECT * from mutation where mutation_type='del'";
+$result = $db -> query($sql);
+if (isset($_POST['submit'])){
+	$snp=$_POST['SNP'];
+	$sql="SELECT * from mutation where mutation_type='del' and  SNPID='".$snp."'";
+	$result = $db -> query($sql);
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,7 +31,17 @@
 
 <br>
 <br>
-
+<br>
+<br>
+<center>
+		<form action="" method="post">
+		<label for="">Enter Deletion-ID:</label>
+		<input type="text" name="SNP" >
+		<input type="submit" value="Search" name="submit">
+	</form>
+	<br>
+	<br>
+</center>
 
 <table>
 <tr>
@@ -28,15 +53,6 @@
 </tr>
 
 <?php
-$user = 'root';
-$pass = '';
-$db = 'mutations';
-
-$db = new mysqli('localhost', $user, $pass, $db) or die ("unable to connect");
-
-$sql = "SELECT * from mutation where mutation_type='del'";
-$result = $db -> query($sql);
-
 if ($result -> num_rows >0 ) {
 	while ($row = $result -> fetch_assoc()) {
 	echo "<tr><td>" .$row["TransciptID"]."</td><td>".$row["SNPID"]."</td><td>".$row["Chrom"]."</td><td>".$row["Allele1miR"]."</td><td>".$row["Allele2miR"]."</td></tr>";
