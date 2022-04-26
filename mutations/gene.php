@@ -43,7 +43,7 @@ if(isset($_POST['submit1'])) {
 	if ($result->num_rows > 0){
 			echo "<table><tr><th>GeneName</th> <th>Marker</th> <th>Study type </th> <th>Disease</th><th>Pubmed ID </th></tr>";
 		while($row = $result->fetch_assoc() ){
-		echo "<tr><td>" . $row["gene_name"]. "</td><td>" . $row["COL2"]."</td> <td>" . $row["COL3"]. "</td><td>" . $row["COL4"]. "</td><td>" . $row["COL5"]. "</td></tr>";
+		echo "<tr><td>" . $row["gene_name"]. "</td><td>" . $row["COL2"]."</td> <td>" . $row["COL3"]. "</td><td>" . $row["COL4"]. "</td><td><a href='https://pubmed.ncbi.nlm.nih.gov/" . $row["COL5"]."'>" .$row["COL5"] ."</td></tr>";
     }
     
 echo "</table>";
