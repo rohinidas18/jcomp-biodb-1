@@ -26,7 +26,7 @@ $db -> close();
 <div class="header">
 
 	<nav>
-	<a href="home.html"> <image src="home_button.png" width="25" height="25"> </a>
+	<a href="home.html" class ="btn" style="color:white"> Click to go Home </a>
 	</nav>
 
 <h1> Mutations in miRNA </h1>
@@ -86,11 +86,11 @@ td {
 }
 
 tr:nth-child(even) {
-background-color: #f2f2f2;
+background-color: #9ccc65;
 }
 
 th {
-background-color: #e85848;
+background-color: #2e7d32;
 color : white;
 text-align: center;
 border: 1px solid #ddd;
@@ -98,12 +98,12 @@ padding: 8px;
 }
 
 tr:nth-child(even):hover {
-background-color: #787878;
+background-color: #33691e;
 color: white;
 }
 
 tr:nth-child(odd):hover {
-background-color: #787878;
+background-color: #33691e;
 color: white;
 }
 
@@ -111,7 +111,7 @@ color: white;
 .header {
   padding: 8px;
   text-align: center;
-  background: #e85848;
+  background: #2e7d32;
   color: white;
   font-size: 25px;
 }

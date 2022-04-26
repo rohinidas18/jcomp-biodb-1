@@ -8,7 +8,7 @@ $db = new mysqli('localhost', $user, $pass, $db) or die ("unable to connect");
 $sql = "SELECT * from region where region='Seed'";
 if (isset($_POST['submit'])){
 	$name=$_POST['miRNA'];
-	$sql="SELECT * from region where region='Pre-miRNA' and miRNA_name='".$name."'";
+	$sql="SELECT * from region where region='Seed' and miRNA_name='".$name."'";
 	$result = $db -> query($sql);
 }
 $result = $db -> query($sql);
@@ -23,11 +23,11 @@ $result = $db -> query($sql);
 <div class="header">
 
 	<nav>
-	<a href="home.html"> <image src="home_button.png" width="25" height="25"> </a>
+	<a href="home.html" class ="btn" style="color:white"> Click to go Home </a>
 	</nav>
 
-<h1> Mutations in miRNA </h1>
-<p> Mutations that occur in the seed region of miRNA specifically </p>
+<h1 style="color: black"> Mutations in miRNA </h1>
+<p style="color: black"> Mutations that occur in the seed region of miRNA specifically </p>
 
 </div>
 
@@ -90,11 +90,11 @@ td {
 }
 
 tr:nth-child(even) {
-background-color: #f2f2f2;
+background-color: #c5e1a5;
 }
 
 th {
-background-color: #1abc9c;
+background-color: #558b2f;
 color : white;
 text-align: center;
 border: 1px solid #ddd;
@@ -102,12 +102,12 @@ padding: 8px;
 }
 
 tr:nth-child(even):hover {
-background-color: #787878;
+background-color: #33691e;
 color: white;
 }
 
 tr:nth-child(odd):hover {
-background-color: #787878;
+background-color: #33691e;
 color: white;
 }
 
@@ -115,7 +115,7 @@ color: white;
 .header {
   padding: 8px;
   text-align: center;
-  background: #1abc9c;
+  background: #8bc34a;
   color: white;
   font-size: 25px;
 }
