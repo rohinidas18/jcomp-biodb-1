@@ -1,0 +1,256 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta name="viewport" content="with=device-width, initial-scale=1.0">
+	<title> Mutations - Project </title>
+	<link rel="stylesheet" href="homestyle.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<style>
+		html{
+			scroll-behavior: smooth;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="navbar-fixed">
+		<nav class="black z-depth-0" style="padding-right: 30px;padding-left: 80px;">
+			<div>
+				<a href="#" class="brand-logo brand-text hide-on-med-and-down">miRNA Database</a>
+				<ul id="nav-mobile" class="right">
+					<li><a href="#region">Region</a></li>
+					<li><a href="#type">Type</a></li>
+					<li><a href="#cancer">Cancers and Genes</a></li>
+					<li><a href="#clash">CLASH</a></li>
+				</ul>
+			</div>
+			<br>
+		</nav>
+	</div>
+
+	<section class="header">
+		<div class="text-box">
+			<h1> Mutation in miRNA </h1>
+			<p> MicroRNAs (miRNAs) are small, non-coding RNA molecules typically containing ~22 nucleotides found in
+				human, animals, plants and some viruses which are playing an important regulatory role in the gene
+				translation via silencing or degradation of target mRNAs.They are involved in many important biological
+				processes and the dysfunction of microRNA has been associated with many diseases. </p>
+		</div>
+	</section>
+	<div class="green lighten-3">
+		<section class="first" id="region">
+			<h1> Mutations by regions</h1>
+			<p> Classification based on the region where the mutation occurs</p>
+			<div class="row">
+				<div class="one">
+					<img src="one.png" width="225" height="215">
+					<a href="http://localhost/mirna-database/mutations/Pre-miRNA.php" class="btn-large">
+						<p class="white-text"> Pre-miRNA </p>
+					</a>
+				</div>
+				<div class="one">
+					<img src="one.png" width="225" height="215">
+					<a href="http://localhost/mirna-database/mutations/seed.php" class="btn-large">
+						<p class="white-text"> Seed </p>
+					</a>
+				</div>
+				<div class="one">
+					<img src="one.png" width="225" height="215">
+					<a href="http://localhost/mirna-database/mutations/mature.php" class="btn-large">
+						<p class="white-text"> Mature </p>
+					</a>
+				</div>
+			</div>
+		</section>
+		<br>
+	</div>
+
+
+	<section class="first" id="type">
+		<h1> Mutations by type </h1>
+		<p> Classification based on the type of mutation</p>
+		<div class="row">
+			<div class="one">
+				<img src="insertion.png" width="225" height="200">
+				<a href="http://localhost/mirna-database/mutations/insertion.php" class="btn-large">
+					<p class="white-text"> Insertion </p>
+				</a>
+			</div>
+			<div class="one">
+				<img src="deletion.png" width="225" height="200">
+				<a href="http://localhost/mirna-database/mutations/deletion.php" class="btn-large">
+					<p class="white-text"> Deletion </p>
+				</a>
+			</div>
+			<div class="one">
+				<img src="snp.jpg" width="225" height="215">
+
+				<a href="http://localhost/mirna-database/mutations/snp.php" class="btn-large">
+					<p class="white-text"> Single Nucleotide polymorphism </p>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<div class="light-green lighten-3" id="cancer">
+		<section class="first">
+			<h1> Mutations and cancer </h1>
+
+			<div class="row2">
+				<div class="two">
+					<img src="cancer.jpg" width="225" height="100">
+					<a href="http://localhost/mirna-database/mutations/cancer.php" class="btn-large light-green darken-4">
+						<p class="white-text"> Cancer </p>
+					</a>
+				</div>
+				<div class="three">
+					<img src="gene-img.jpg" width="225" height="100">
+					<a href="http://localhost/mirna-database/mutations/gene.php" class="btn-large light-green darken-4">
+						<p class="white-text"> Genes </p>
+					</a>
+				</div>
+			</div>
+		</section>
+		<br>
+	</div>
+
+	<section class="first" id="clash">
+		<h1> CLASH </h1>
+		<p> Crosslinking, Ligation and sequencing of hybrids</p>
+
+		<div class="row2">
+			<div class="four">
+				<img src="CLASH.jpg" width="225" height="175">
+				<br>
+
+				<p> Browse somatic mutations in experimentally identified miRNA target sites: CLASH </p><a
+					href="http://localhost/mirna-database/mutations/test.php" class="btn-large red lighten-2">
+					<p class="white-text">Browse Now</p>
+				</a>
+			</div>
+		</div>
+	</section>
+	<br><br><br><br>
+	<hr>
+	<hr><br><br><br>
+</body>
+
+<style>
+	* {
+		margin: 0;
+		padding: 0;
+	}
+
+	.header {
+		min-height: 100vh;
+		width: 100%;
+		background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(home.jpg);
+		background-position: center;
+		background-size: cover;
+		position: relative;
+
+	}
+
+	.text-box {
+		width: 90%;
+		color: #fff;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+	}
+
+	.text-box h1 {
+		font-size: 62px;
+	}
+
+	.text-box p {
+		margin: 10px 0 40px;
+		font-size: 25px;
+		color: #fff;
+	}
+
+	.first {
+		width: 80%;
+		margin: auto;
+		text-align: center;
+		padding-top: 100px;
+	}
+
+	.first h1 {
+		font-size: 36px;
+		font-weight: 600;
+	}
+
+	.first p {
+		color: #777;
+		font-size: 23px;
+		font-weight: 400;
+		line-height: 22px;
+		padding: 10px;
+	}
+
+	.row {
+		margin-top: 2%;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.one {
+		flex-basis: 31%;
+		border-radius: 10px;
+		margin-bottom: 2%;
+		text-align: center;
+	}
+
+	.one img {
+		border-radius: 10px;
+	}
+
+	.row2 {
+		margin-top: 2%;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.two {
+		flex-basis: 31%;
+		border-radius: 10px;
+		margin-bottom: 2%;
+		margin-left: 10%;
+		text-align: center;
+	}
+
+	.two img {
+		border-radius: 10px;
+	}
+
+	.three {
+		flex-basis: 31%;
+		border-radius: 10px;
+		margin-bottom: 2%;
+		margin-right: 10%;
+		text-align: center;
+	}
+
+	.three img {
+		border-radius: 10px;
+	}
+
+	.four {
+		margin-left: auto;
+		margin-right: auto;
+		border-radius: 10px;
+		text-align: center;
+	}
+
+	.four img {
+		border-radius: 10px;
+	}
+</style>
+
+</html>
